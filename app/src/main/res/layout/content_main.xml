@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+
+                <TextView
+                    android:id="@+id/current"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_text"
+                    android:text="@string/current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/place_name"
+            tools:text="London"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/temp"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            tools:text="64°"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- 8dp paddingTop for icon with single-item according to material design guidelines at
+        https://material.io/guidelines/components/lists.html#lists-specs -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:id="@+id/weather_icon_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/person_icon"-->
+                    <!--android:src="@mipmap/ic_launcher"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:paddingLeft="6dp"-->
+                    <!--android:paddingStart="6dp"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@id/person_icon"-->
+                    <!--android:layout_toEndOf="@id/person_icon">-->
+
+                    <!--<TextView-->
+                        <!--tools:text="Rainy"-->
+                        <!--android:textColor="@color/primary_text"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+                <!--</RelativeLayout>-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/search_intro_text"
+        android:visibility="visible"
+        android:padding="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
