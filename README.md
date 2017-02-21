@@ -7,6 +7,8 @@ only shows weather for US locations as per the requirements.
 What my design looks like is below. The picture is taken on Nexus 4 emulator for kicks.
 16dp padding left and right like usual.
 
+The API can give multiple weather reports like light rain and fog, so that is why it is a list.
+
 
 ![ScreenShot](https://raw.github.com/John61590/ChaseAndroidInterview/master/weather_info.png)
 
